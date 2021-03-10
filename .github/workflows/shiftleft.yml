@@ -27,7 +27,10 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo Hello, world!
+        env:
+                CHKP_CLOUDGUARD_ID: ${{secrets.CHKP_CLOUDGUARD_ID}}
+                CHKP_CLOUDGUARD_SECRET: ${{secrets.CHKP_CLOUDGUARD_SECRET}}
+        run: echo Hello, world!!!!g73y6cr73kbusc77myyhkqna!
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
